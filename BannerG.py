@@ -55,7 +55,7 @@ myssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 myssh.load_system_host_keys()
 
 ip = '192.168.56.103'
-port = 22
+port = 4444
 username = 'kali'
 
 mfile = open('passwords.txt')
