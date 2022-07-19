@@ -29,7 +29,7 @@ while continue_game:
     for player_name, player_score in score_players.items():
         if player_score == max_score:
             winners.append(player_name)
-            # print(f'{player_name} Win!')
+            print(f'{player_name} Win!')
             continue_game = False
     # at the end of the game show up a winner
     if len(winners) == 1:
