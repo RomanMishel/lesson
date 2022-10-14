@@ -23,8 +23,8 @@ from bs4 import BeautifulSoup
     #     file.close()
 
 url = 'http://scanme.nmap.org'
-req = requests.get(url)
-soup = BeautifulSoup(req.text, 'html.parser')
+r = requests.get(url)
+soup = BeautifulSoup(r.text, 'html.parser')
 
 for link in soup.findAll('a'):
         print(link)
